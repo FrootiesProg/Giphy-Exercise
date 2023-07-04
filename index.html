@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giphy Party!</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="waves">
+      <span style="--i: 1">G</span>
+      <span style="--i: 2">I</span>
+      <span style="--i: 3">P</span>
+      <span style="--i: 4">H</span>
+      <span style="--i: 5">Y</span>
+      <span style="--i: 6">P</span>
+      <span style="--i: 7">A</span>
+      <span style="--i: 8">R</span>
+      <span style="--i: 9">T</span>
+      <span style="--i: 10">Y</span>
+    </div>
+
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Enter a search term." />
+      <button type="submit">Search Giphy!</button>
+    </form>
+    <button id="removeButton">Remove GIFs</button>
+    <div id="gifContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  background: #1b263b;
+}
+
+.waves {
+  text-align: center;
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 70px;
+  margin-bottom: 60px;
+}
+
+.waves span {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  animation: waves 1s infinite;
+  animation-delay: calc(0.5s * var(--i));
+}
+
+@keyframes waves {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#removeButton {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 30px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#removeButton:hover {
+  background-color: #d32f2f;
+}
+
+#gifContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  object-fit: cover;
+}
